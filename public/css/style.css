@@ -1,0 +1,186 @@
+body{
+   overflow: hidden!important;
+   width:100%; 
+   height:100%;
+   padding:0;
+   margin:0;
+   font-family: 'Montserrat', sans-serif;
+}
+
+button.btn.btn-primary,button.btn.btn-primary:hover{
+    background:#7CA364 !important;
+    border:2px solid #7CA364 !important;
+    color:white!important;
+}
+
+#navbar{
+    height:40px;
+    background:#7CA364;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+}
+
+#navbar img{
+    margin:2.5px 10px;
+    position: absolute;
+}
+
+#main-container,#sidebar,#main{
+    height:calc(100vh - 40px);
+    width:100%;
+}
+
+#main-container{
+    margin:40px 0 0 0;
+    padding:0;
+}
+
+#sidebar{
+    overflow-y: scroll!important;
+    overflow-x: hidden!important;
+    padding:0;
+    background-color:  #333333;
+}
+
+#sidebar a{
+    border:2px solid transparent;
+    text-decoration: none;
+    font-size: 14px;
+    transition: .5s ease-in-out;
+    color:#FFFFFF;
+    font-weight: bold;
+    padding:5px 10px;
+    margin:10px 0px;
+}
+
+#sidebar a span{
+    position: absolute;
+    right:20%;
+}
+
+#sidebar a:hover{
+    background:#7CA364;
+}
+
+
+#main{
+    overflow-y: scroll!important;
+    overflow-x: hidden!important;
+    background-color: #FFFFFF;   
+    padding:20px;
+}
+
+#main .map,.data{
+    height:300px;
+    width:100%;
+}
+
+#main .mapMarker{
+    z-index:10;
+    height:30px;
+    position: absolute;
+    top:142px;
+    left:25%;
+}
+
+#main .data #speed .meter{
+    font-family: 'Oswald', sans-serif;
+    font-size:100px;
+    width:80px!important;
+}
+
+#main .data #speed img{
+    margin:auto 2px auto auto;
+}
+
+#main .data #speed #charge{
+    font-family: 'Oswald', sans-serif;
+    font-size:24px;
+    margin:auto auto auto 2px;
+}
+
+#main .data #alert-div{
+    font-size:14px!important;
+    transition:.5s;
+}
+
+#main .data #speed .kmh{
+    font-size:20px;
+    font-weight: bold;
+    position: absolute;
+    bottom:20px;
+    color:#7ca364;
+}
+
+#battery{
+  background:#7CA364;
+  border:3px solid #7CA364;
+  border-radius:5px;
+  width:60px;
+  height:120px;
+  margin:auto;
+  /*box-shadow:0px 10px 20px rgba(0,0,0,.2)*/
+}
+
+#battery .top{
+  position: absolute;
+  top:50%;
+  right:50%;
+  width:25px;
+  height:5px;
+  margin:-67px -12.5px 0 0;
+  background:#7CA364;
+  border-radius:10px 10px 0 0;
+}
+
+#battery .filler{
+    height:80%;
+  border-radius:5px 5px 0 0;
+  transition:.2s ease;
+  width:100%;
+  background:white;
+}
+
+#battery .charge{
+    font-family: 'Oswald', sans-serif;
+    background:#7CA364;
+    text-align:center;
+    border-radius:5px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:40px;
+    height:26px;
+    margin:-15px 0 0 -20px;
+    font-weight:bold;
+    font-size:14px;
+    color:white;
+}
+
+#main .chart-container{
+    margin:50px 0 0 0;
+}
+
+
+#main #names{
+    height:25px;
+}
+
+#main #log #data div{
+    height:20px;
+}
+
+#main #log #names small{
+    color:#7CA364;
+    font-weight: bolder!important;
+}
+
+#main #log #log{
+    height:375px!important;
+    overflow-y: scroll!important;
+    overflow-x: hidden!important;
+    font-size:12px; 
+    color:gray;
+}

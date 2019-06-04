@@ -1,0 +1,23 @@
+{
+  "name": "dev",
+  "version": "1.0.0",
+  "description": "viriciti assignment",
+  "main": "server.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-mongo": "sh ./mongo-rs && sh./mongo",
+    "start": "node server.js"
+  },
+  "author": "Niek van Losenoord",
+  "license": "ISC",
+  "dependencies": {
+    "docker": "^1.0.0",
+    "express": "~3.2.4",
+    "express-handlebars": "^3.1.0",
+    "mongodb": "^3.2.6",
+    "mongoose": "^5.5.11",
+    "nats": "^1.2.10",
+    "socket.io": "~0.9.14"
+  }
+}

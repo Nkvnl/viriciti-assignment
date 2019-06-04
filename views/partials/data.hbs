@@ -1,0 +1,76 @@
+<div class="col-4 data">
+    <div class="row">
+        <div class="col-7">
+            <h5 class="mb-0">test-bus-1
+            <img id="status-img" src="../img/status/Online.png">
+            <span><small id="status">Online</small></span>
+            </h5>
+            <small class="text-muted">Last update at
+                <span class="time text-dark">
+
+                </span>
+            </small>
+            <button class="btn btn-sm btn-primary my-1" style="display:none;" id="back" onclick="driveBack(true)">Drive back</button>
+            <button class="btn btn-sm btn-danger my-1" style="display:none;" id="redo" onclick="driveBack(false)">Start again</button>
+        </div>
+        <div style="opacity:0;" id="alert-div" class="col-5 mx-auto alert alert-danger">
+            <small id="alert"></small>
+        </div>
+    </div>
+    <div class="col-12 text-muted">
+
+    </div>
+    <div class="col-12 row text-center" id="speed">
+        <div class="col-6 row">
+            <div class="col-6 p-0" style="display:grid;">
+                <img src="../img/charge.png">
+            </div>
+            <div class="col-6 p-0" style="display:grid;">
+                <span id="charge">50%</span>
+            </div>
+        </div>
+        <div class="col-6">
+            <p><span class="meter">
+                50
+            </span>
+            <span class="kmh">
+                kmh
+            </span></p>
+        </div>
+    </div>
+    <div class="col-12 row">
+        <div class="col-12 row">
+                <div class="col-6 text-muted">
+                    <small>
+                        Totaal
+                    </small><br>
+                    <small>
+                        This ride
+                    </small><br>
+                    <small>
+                        Energy
+                    </small><br>
+                </div>
+            <div class="col-6">
+                <small>
+                    <span id="total">
+                        
+                    </span>
+                     km
+                </small><br>
+                <small>
+                    <span id="distance">
+                        
+                    </span>
+                     km
+                </small><br>
+                <small>
+                    <span id="soc">
+                        
+                    </span>
+                    
+                </small><br>
+            </div>
+        </div>
+    </div>
+</div>

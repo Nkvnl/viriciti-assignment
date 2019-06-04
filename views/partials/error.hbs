@@ -1,0 +1,26 @@
+<div class="col-12 row font-weight-bold">
+    <div class="col-2">
+        Time
+    </div>
+    <div class="col-6">
+        Error
+    </div>
+    <div class="col-4">
+        Operation
+    </div>
+</div>
+{{# each error}}
+<div class="row col-12">
+    <div class="col-2 text-muted">
+        {{this.time}}
+    </div>
+    <div class="col-6">
+        {{this.error}}
+    </div>
+    <div class="col-4">
+        {{this.operation}}
+    </div>
+</div>
+<hr>
+<hr>
+{{/each}}
